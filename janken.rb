@@ -1,10 +1,11 @@
 class Player
   def hand
-    while true
+    content = true
+    while content
       puts "数字を入力してください。"
       puts "0:グー, 1:チョキ, 2:パー"
       input_hand = gets.to_i
-      if input_hand == 0 || 1 || 2
+      if input_hand == 0 || input_hand == 1 || input_hand == 2
         return  input_hand
       end
     end
